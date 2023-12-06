@@ -23,4 +23,3 @@ shiwei = int(num)%100//10
 print(shiwei)
 gewei = int(num)%10
 print(gewei)'''
-sorted
