@@ -12,7 +12,7 @@ if pay_confirm in ["y", "Y"]:
         print("请输入正确的数量!")
         pay_amount = input()
     gold_coins += int(pay_amount)
-    print("您已充值%d个金币!您的金币总数为%d!" % (pay_amount, gold_coins))
+    print("您已充值%d个金币!您的金币总数为%d!" % (int(pay_amount), gold_coins))
 while True:
     bet_confirm = input("请下注!\n1-大\n2-小\n")
     while bet_confirm not in ["1", "2"]:

@@ -1,0 +1,550 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "speech_recognition",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "speech_recognition",
+        "description": "speech_recognition",
+        "detail": "speech_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "FFmpeg",
+        "importPath": "pyffmpeg",
+        "description": "pyffmpeg",
+        "isExtraImport": true,
+        "detail": "pyffmpeg",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "10-循环语句",
+        "description": "10-循环语句",
+        "peekOfCode": "total = 0\nnumber1 = 0\nwhile True:\n    price = random.randint(1, 10000) / 100\n    print(\"当前商品价格为:%.2f\" % (price))\n    number = int(input(\"输入购买数量\"))\n    total += number * price\n    number1 += number\n    answer = input(\"当前已购买%d件商品,商品总价为:%.2f,按q退出\" % (number1, total))\n    if answer == \"q\":",
+        "detail": "10-循环语句",
+        "documentation": {}
+    },
+    {
+        "label": "number1",
+        "kind": 5,
+        "importPath": "10-循环语句",
+        "description": "10-循环语句",
+        "peekOfCode": "number1 = 0\nwhile True:\n    price = random.randint(1, 10000) / 100\n    print(\"当前商品价格为:%.2f\" % (price))\n    number = int(input(\"输入购买数量\"))\n    total += number * price\n    number1 += number\n    answer = input(\"当前已购买%d件商品,商品总价为:%.2f,按q退出\" % (number1, total))\n    if answer == \"q\":\n        break",
+        "detail": "10-循环语句",
+        "documentation": {}
+    },
+    {
+        "label": "answer",
+        "kind": 5,
+        "importPath": "11-猜数字",
+        "description": "11-猜数字",
+        "peekOfCode": "answer = random.randint(1, 100)\nguess = 0\nwhile guess != answer:\n    guess = int(input(\"请输入你想猜的数:\"))\n    if guess < answer:\n        print(\"你猜的数字小了\")\n    elif guess > answer:\n        print(\"你猜的数字大了\")\nprint(\"恭喜你!猜对了!\")",
+        "detail": "11-猜数字",
+        "documentation": {}
+    },
+    {
+        "label": "guess",
+        "kind": 5,
+        "importPath": "11-猜数字",
+        "description": "11-猜数字",
+        "peekOfCode": "guess = 0\nwhile guess != answer:\n    guess = int(input(\"请输入你想猜的数:\"))\n    if guess < answer:\n        print(\"你猜的数字小了\")\n    elif guess > answer:\n        print(\"你猜的数字大了\")\nprint(\"恭喜你!猜对了!\")",
+        "detail": "11-猜数字",
+        "documentation": {}
+    },
+    {
+        "label": "recognizer",
+        "kind": 5,
+        "importPath": "1111111",
+        "description": "1111111",
+        "peekOfCode": "recognizer = sr.Recognizer()\nwhile True:\n    with sr.Microphone() as source:\n        recognizer.adjust_for_ambient_noise(source, duration=1)\n        print(\"Say something please !\")\n        audio = recognizer.listen(source)\n        try:\n            text = recognizer.recognize_google(audio, language=\"zh-CN\", show_all=False)\n            print(\"You said : {}\".format(text))\n        except:",
+        "detail": "1111111",
+        "documentation": {}
+    },
+    {
+        "label": "gold_coins",
+        "kind": 5,
+        "importPath": "12-for循环",
+        "description": "12-for循环",
+        "peekOfCode": "gold_coins = 10\n# 初始金币为10个\nwhile True:\n    pay_confirm = input(\"您的初始金币为10个,是否充值?\\ny/n\\n\")\n    if pay_confirm == \"y\" or pay_confirm == \"Y\":\n        while True:\n            pay_amount = input(\"请输入充值金额:\")\n            if pay_amount.isdigit():\n                pay_amount = int(pay_amount)\n                gold_coins += pay_amount",
+        "detail": "12-for循环",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "13-字符串切片",
+        "description": "13-字符串切片",
+        "peekOfCode": "s1 = \"hello\"\ns2 = s1\ns3 = \"hello\"\nprint(s1, s2, s3)\nprint(id(s1))\nprint(id(s2))\nprint(id(s3))\nprint(s1[2:4])",
+        "detail": "13-字符串切片",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "13-字符串切片",
+        "description": "13-字符串切片",
+        "peekOfCode": "s2 = s1\ns3 = \"hello\"\nprint(s1, s2, s3)\nprint(id(s1))\nprint(id(s2))\nprint(id(s3))\nprint(s1[2:4])",
+        "detail": "13-字符串切片",
+        "documentation": {}
+    },
+    {
+        "label": "s3",
+        "kind": 5,
+        "importPath": "13-字符串切片",
+        "description": "13-字符串切片",
+        "peekOfCode": "s3 = \"hello\"\nprint(s1, s2, s3)\nprint(id(s1))\nprint(id(s2))\nprint(id(s3))\nprint(s1[2:4])",
+        "detail": "13-字符串切片",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "3-数据类型",
+        "description": "3-数据类型",
+        "peekOfCode": "money = 28\nprint(type(money))\nmoney = 28.9\nprint(type(money))\nmoney = '28.9'\nprint(type(money))\nmoney = \"28.9\"\nprint(type(money))\nmoney = '''\n        静夜思",
+        "detail": "3-数据类型",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "3-数据类型",
+        "description": "3-数据类型",
+        "peekOfCode": "money = 28.9\nprint(type(money))\nmoney = '28.9'\nprint(type(money))\nmoney = \"28.9\"\nprint(type(money))\nmoney = '''\n        静夜思\n            唐李白\n床前明月光，疑是地上霜。",
+        "detail": "3-数据类型",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "3-数据类型",
+        "description": "3-数据类型",
+        "peekOfCode": "money = '28.9'\nprint(type(money))\nmoney = \"28.9\"\nprint(type(money))\nmoney = '''\n        静夜思\n            唐李白\n床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n'''",
+        "detail": "3-数据类型",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "3-数据类型",
+        "description": "3-数据类型",
+        "peekOfCode": "money = \"28.9\"\nprint(type(money))\nmoney = '''\n        静夜思\n            唐李白\n床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n'''\nprint(money)#三引号保留字符串格式\nmoney = True",
+        "detail": "3-数据类型",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "3-数据类型",
+        "description": "3-数据类型",
+        "peekOfCode": "money = '''\n        静夜思\n            唐李白\n床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n'''\nprint(money)#三引号保留字符串格式\nmoney = True\nprint(type(money))\nmoney = 28,9",
+        "detail": "3-数据类型",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "3-数据类型",
+        "description": "3-数据类型",
+        "peekOfCode": "money = True\nprint(type(money))\nmoney = 28,9\nprint(type(money))",
+        "detail": "3-数据类型",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "3-数据类型",
+        "description": "3-数据类型",
+        "peekOfCode": "money = 28,9\nprint(type(money))",
+        "detail": "3-数据类型",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "4-类型转换",
+        "description": "4-类型转换",
+        "peekOfCode": "name = 'zhangsan'\nprint(name)\n#input\nusername = input('请输入姓名：') #阻塞性函数，运行到此处会暂停，input输入类型只为字符串类型\nprint(username)\nprint(type(username))\nmoney = input('请输入金额：') \nprint(money)\nprint(type(money))#输入数字也为字符串\n#类型转换 str--->int",
+        "detail": "4-类型转换",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "4-类型转换",
+        "description": "4-类型转换",
+        "peekOfCode": "username = input('请输入姓名：') #阻塞性函数，运行到此处会暂停，input输入类型只为字符串类型\nprint(username)\nprint(type(username))\nmoney = input('请输入金额：') \nprint(money)\nprint(type(money))#输入数字也为字符串\n#类型转换 str--->int\nprint(int(money)+1000)\n#类型转换 int--->str\nprint(money+str(1000))",
+        "detail": "4-类型转换",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "4-类型转换",
+        "description": "4-类型转换",
+        "peekOfCode": "money = input('请输入金额：') \nprint(money)\nprint(type(money))#输入数字也为字符串\n#类型转换 str--->int\nprint(int(money)+1000)\n#类型转换 int--->str\nprint(money+str(1000))",
+        "detail": "4-类型转换",
+        "documentation": {}
+    },
+    {
+        "label": "first_int",
+        "kind": 5,
+        "importPath": "4-类型转换练习",
+        "description": "4-类型转换练习",
+        "peekOfCode": "first_int = input('输入第一个数:')\nsecond_int = input('输入第二个数:')\nprint('两数之和为：'+str(float(first_int)+float(second_int)))\nprint('两数之差为：'+str(float(first_int)-float(second_int)))\n'''\nstr ---> int int(a) 但是如果'9.9\"而且是字符串类型转成int的时候报错了\nstr ---> float float(a)\nint ----> str str(a)\nfloat ----> str str(a)\nint ---> float float(a)",
+        "detail": "4-类型转换练习",
+        "documentation": {}
+    },
+    {
+        "label": "second_int",
+        "kind": 5,
+        "importPath": "4-类型转换练习",
+        "description": "4-类型转换练习",
+        "peekOfCode": "second_int = input('输入第二个数:')\nprint('两数之和为：'+str(float(first_int)+float(second_int)))\nprint('两数之差为：'+str(float(first_int)-float(second_int)))\n'''\nstr ---> int int(a) 但是如果'9.9\"而且是字符串类型转成int的时候报错了\nstr ---> float float(a)\nint ----> str str(a)\nfloat ----> str str(a)\nint ---> float float(a)\nfloat ---> int int(a) 只不过float类型中小数点后面的数字被抹掉了",
+        "detail": "4-类型转换练习",
+        "documentation": {}
+    },
+    {
+        "label": "赋值运算符",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "赋值运算符 = += -= *= /= //= **/\n算数运算符： + - * / % // **\n关系运算符：> < >= <= == != is \n逻辑运算符：and or not\n'''\n'''a = 1\nb = 2\nc = a + b\nprint(a,b,c)'''\n#//:整除",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "'''a",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "'''a = 1\nb = 2\nc = a + b\nprint(a,b,c)'''\n#//:整除\n#**：次幂\n#%：取余\n'''\n键盘输入一个3位数的整数，打印个位数，十位数，百位数\n'''",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "b = 2\nc = a + b\nprint(a,b,c)'''\n#//:整除\n#**：次幂\n#%：取余\n'''\n键盘输入一个3位数的整数，打印个位数，十位数，百位数\n'''\n'''",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "c = a + b\nprint(a,b,c)'''\n#//:整除\n#**：次幂\n#%：取余\n'''\n键盘输入一个3位数的整数，打印个位数，十位数，百位数\n'''\n'''\nnum = input('请输入一个三位数')",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "num = input('请输入一个三位数')\nbaiwei = int(num)//100\nprint(baiwei)\nshiwei = int(num)%100//10\nprint(shiwei)\ngewei = int(num)%10\nprint(gewei)\n'''\n'''\nand:与，并且 只要有一侧为假，结果即为假",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "baiwei",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "baiwei = int(num)//100\nprint(baiwei)\nshiwei = int(num)%100//10\nprint(shiwei)\ngewei = int(num)%10\nprint(gewei)\n'''\n'''\nand:与，并且 只要有一侧为假，结果即为假\nA and B",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "shiwei",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "shiwei = int(num)%100//10\nprint(shiwei)\ngewei = int(num)%10\nprint(gewei)\n'''\n'''\nand:与，并且 只要有一侧为假，结果即为假\nA and B\nTure and True--->True\nTure and False--->False",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "gewei",
+        "kind": 5,
+        "importPath": "5-运算符",
+        "description": "5-运算符",
+        "peekOfCode": "gewei = int(num)%10\nprint(gewei)\n'''\n'''\nand:与，并且 只要有一侧为假，结果即为假\nA and B\nTure and True--->True\nTure and False--->False\nFalse and True--->False\nFalse and False--->False",
+        "detail": "5-运算符",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "6-输出格式化",
+        "description": "6-输出格式化",
+        "peekOfCode": "name = \"蔡徐坤\"\nage = 26\n# 我喜欢听26岁的蔡徐坤唱歌\nprint(\"我喜欢听\" + str(age) + \"岁的\" + name + \"唱歌\")\n\"\"\"\n符号：\n%% 输出%号\n%s 字符串 string\n%d 有符号十进制整数 digit\n%f 浮点数 float",
+        "detail": "6-输出格式化",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "6-输出格式化",
+        "description": "6-输出格式化",
+        "peekOfCode": "age = 26\n# 我喜欢听26岁的蔡徐坤唱歌\nprint(\"我喜欢听\" + str(age) + \"岁的\" + name + \"唱歌\")\n\"\"\"\n符号：\n%% 输出%号\n%s 字符串 string\n%d 有符号十进制整数 digit\n%f 浮点数 float\n%c 字符 char",
+        "detail": "6-输出格式化",
+        "documentation": {}
+    },
+    {
+        "label": "money",
+        "kind": 5,
+        "importPath": "6-输出格式化",
+        "description": "6-输出格式化",
+        "peekOfCode": "money = 999.95\n# 26岁的蔡徐坤一首歌挣了999.95元\nprint(\"%d岁的%s一首歌挣了%f元\" % (age, name, money))\nprint(\"%s岁的%s一首歌挣了%s元\" % (age, name, money))\nprint(\"%d岁的%s一首歌挣了%.2f元\" % (age, name, money))",
+        "detail": "6-输出格式化",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "7-进制",
+        "description": "7-进制",
+        "peekOfCode": "n = 149\n#转二进制\nprint(bin(n))\n#转八进制\nprint(oct(n))\n#转十六进制\nprint(hex(n))\nx = 0x558\n'''\nx = 0x558,输出十进制",
+        "detail": "7-进制",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "7-进制",
+        "description": "7-进制",
+        "peekOfCode": "x = 0x558\n'''\nx = 0x558,输出十进制\nx = 0x558,转成二进制\n'''\nprint(x)\nprint(bin(x))",
+        "detail": "7-进制",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "7-进制",
+        "description": "7-进制",
+        "peekOfCode": "x = 0x558,输出十进制\nx = 0x558,转成二进制\n'''\nprint(x)\nprint(bin(x))",
+        "detail": "7-进制",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "7-进制",
+        "description": "7-进制",
+        "peekOfCode": "x = 0x558,转成二进制\n'''\nprint(x)\nprint(bin(x))",
+        "detail": "7-进制",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "8-位运算",
+        "description": "8-位运算",
+        "peekOfCode": "n1 = 0b0110\nn2 = 0b0010\nprint(n1 & n2)\n'''\n1为真，0为假\n0110\n0010\n结果为\n0010\n5&9",
+        "detail": "8-位运算",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "8-位运算",
+        "description": "8-位运算",
+        "peekOfCode": "n2 = 0b0010\nprint(n1 & n2)\n'''\n1为真，0为假\n0110\n0010\n结果为\n0010\n5&9\n5=0101",
+        "detail": "8-位运算",
+        "documentation": {}
+    },
+    {
+        "label": "ran",
+        "kind": 5,
+        "importPath": "9-条件语句",
+        "description": "9-条件语句",
+        "peekOfCode": "ran = random.randint(1, 10)\nprint(ran)\ncai = input(\"请输入你猜的数:\")\nif int(cai) == ran:\n    print(\"正确\")\nelse:\n    print(\"错误\")",
+        "detail": "9-条件语句",
+        "documentation": {}
+    },
+    {
+        "label": "cai",
+        "kind": 5,
+        "importPath": "9-条件语句",
+        "description": "9-条件语句",
+        "peekOfCode": "cai = input(\"请输入你猜的数:\")\nif int(cai) == ran:\n    print(\"正确\")\nelse:\n    print(\"错误\")",
+        "detail": "9-条件语句",
+        "documentation": {}
+    },
+    {
+        "label": "num_choose",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "num_choose = input(\n    \"\"\"\n位数选择：\n1 -- 一位数\n2 -- 两位数\n3 -- 三位数\n4 -- 四位数\n5 -- 五位数\n\"\"\"\n)",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "loop_choose",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "loop_choose = input(\n    \"\"\"\n进行轮数：\n\"\"\"\n)\nwhile loop_choose.isdigit() is False:\n    print(\"请输入正确的字符！\")\n    loop_choose = input()\nloop_choose=int(loop_choose)\ncorrect = 0",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "correct",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "correct = 0\nwrong = 0\nq_num = 1\nwrong_list = []\ntime_1 = time.time()\nwhile q_num <= loop_choose:\n    num_1 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    num_2 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    operator = random.randint(1, 2)\n    if operator == 1:",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "wrong",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "wrong = 0\nq_num = 1\nwrong_list = []\ntime_1 = time.time()\nwhile q_num <= loop_choose:\n    num_1 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    num_2 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    operator = random.randint(1, 2)\n    if operator == 1:\n        result = input(\"%d. %d+%d=\" % (q_num, num_1, num_2))",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "q_num",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "q_num = 1\nwrong_list = []\ntime_1 = time.time()\nwhile q_num <= loop_choose:\n    num_1 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    num_2 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    operator = random.randint(1, 2)\n    if operator == 1:\n        result = input(\"%d. %d+%d=\" % (q_num, num_1, num_2))\n        if int(result) == num_1 + num_2:",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "wrong_list",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "wrong_list = []\ntime_1 = time.time()\nwhile q_num <= loop_choose:\n    num_1 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    num_2 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    operator = random.randint(1, 2)\n    if operator == 1:\n        result = input(\"%d. %d+%d=\" % (q_num, num_1, num_2))\n        if int(result) == num_1 + num_2:\n            correct += 1",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "time_1",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "time_1 = time.time()\nwhile q_num <= loop_choose:\n    num_1 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    num_2 = random.randint(10 ** (num_choose - 1), 10 ** num_choose)\n    operator = random.randint(1, 2)\n    if operator == 1:\n        result = input(\"%d. %d+%d=\" % (q_num, num_1, num_2))\n        if int(result) == num_1 + num_2:\n            correct += 1\n        else:",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "time_2",
+        "kind": 5,
+        "importPath": "练习-口算练习",
+        "description": "练习-口算练习",
+        "peekOfCode": "time_2 = time.time()\nprint(\n    \"\"\"\n练习结束，正确%d道，错误%d道，正确率百分之%.2f，用时%.2fS，平均每题用时%.2fS。\n\"\"\"\n    % (\n        correct,\n        wrong,\n        (correct / int(loop_choose) * 100),\n        (time_2 - time_1),",
+        "detail": "练习-口算练习",
+        "documentation": {}
+    },
+    {
+        "label": "points",
+        "kind": 5,
+        "importPath": "练习-计算坐标点平均值",
+        "description": "练习-计算坐标点平均值",
+        "peekOfCode": "points = np.array(\n    [\n        [117.1350094365, 36.7150256511],  # 我\n        [117.1140221125, 36.7140633287],  # 崔雨晴\n        [117.1454973589, 36.6556555241],  # 侯世哲\n        # [117.1397132350, 36.6907808199],  # 陈嘉曦不考虑\n        [117.2205828412, 36.7008724565],  # 乔泽宇不考虑\n        [117.0652244710, 36.6392179413],  # 苗继东\n        [117.0300577262, 36.6620984499],  # 朱玉玲\n        [117.0667810714, 36.6682985242],  # 李月",
+        "detail": "练习-计算坐标点平均值",
+        "documentation": {}
+    },
+    {
+        "label": "center",
+        "kind": 5,
+        "importPath": "练习-计算坐标点平均值",
+        "description": "练习-计算坐标点平均值",
+        "peekOfCode": "center = np.mean(points, axis=0)\nprint(center)",
+        "detail": "练习-计算坐标点平均值",
+        "documentation": {}
+    },
+    {
+        "label": "gold_coins",
+        "kind": 5,
+        "importPath": "练习-骰子猜大小",
+        "description": "练习-骰子猜大小",
+        "peekOfCode": "gold_coins = 10\npay_confirm = input(\"您的初始金币为10个,是否充值?\\ny/n\\n\")\nwhile pay_confirm not in [\"y\", \"Y\", \"n\", \"N\"]:\n    print(\"请输入正确的字符!\")\n    pay_confirm = input()\nif pay_confirm in [\"y\", \"Y\"]:\n    pay_amount = input(\"请输入充值金额:\")\n    while pay_amount.isdigit() is False:\n        print(\"请输入正确的数量!\")\n        pay_amount = input()",
+        "detail": "练习-骰子猜大小",
+        "documentation": {}
+    },
+    {
+        "label": "pay_confirm",
+        "kind": 5,
+        "importPath": "练习-骰子猜大小",
+        "description": "练习-骰子猜大小",
+        "peekOfCode": "pay_confirm = input(\"您的初始金币为10个,是否充值?\\ny/n\\n\")\nwhile pay_confirm not in [\"y\", \"Y\", \"n\", \"N\"]:\n    print(\"请输入正确的字符!\")\n    pay_confirm = input()\nif pay_confirm in [\"y\", \"Y\"]:\n    pay_amount = input(\"请输入充值金额:\")\n    while pay_amount.isdigit() is False:\n        print(\"请输入正确的数量!\")\n        pay_amount = input()\n    gold_coins += int(pay_amount)",
+        "detail": "练习-骰子猜大小",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "音频转换",
+        "description": "音频转换",
+        "peekOfCode": "f = \"D:\\下载\\小米云盘下载\"\nfs = os.listdir(f)\nfor f1 in fs:\n    tmp_path = os.path.join(f,f1)\n    if not os.path.isdir(tmp_path):\n        print(tmp_path)\n        ff = FFmpeg('D:\\下载\\小米云盘下载')\n        output_file = ff.convert(inp, out)\n        print(output_file)",
+        "detail": "音频转换",
+        "documentation": {}
+    },
+    {
+        "label": "fs",
+        "kind": 5,
+        "importPath": "音频转换",
+        "description": "音频转换",
+        "peekOfCode": "fs = os.listdir(f)\nfor f1 in fs:\n    tmp_path = os.path.join(f,f1)\n    if not os.path.isdir(tmp_path):\n        print(tmp_path)\n        ff = FFmpeg('D:\\下载\\小米云盘下载')\n        output_file = ff.convert(inp, out)\n        print(output_file)",
+        "detail": "音频转换",
+        "documentation": {}
+    }
+]
