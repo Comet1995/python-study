@@ -59,3 +59,4 @@ while True:
         print(f"您的剩余金币为{gold_coins},欢迎下次再来!")
         sys.exit(0)
 
+
