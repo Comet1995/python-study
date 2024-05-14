@@ -1,5 +1,3 @@
-"""_summary_"""
-
 import random
 import sys
 
